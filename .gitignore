@@ -12,3 +12,7 @@ logs
 results
 
 npm-debug.log
+.DS_Store
+.tern-port
+.idea
+node_modules
