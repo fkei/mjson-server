@@ -2,4 +2,27 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Welcome to !{title}
+  if error
+    p(style="background-color: #e95388; color: #FFFFFF;padding: 5px; border-radius: 10px;")
+      !{error}
+
+  if success
+    p(style="background-color: #00a0de; color: #FFFFFF;padding: 5px; border-radius: 10px;")
+      !{success}
+
+  form(action="/", method="POST")
+    textarea(name="json", rows=20, cols=80)
+      !{output}
+    br
+
+    //input(type="checkbox", name="uncomment", value="uncomment", checked="checked")
+    //コメント除去
+    //input(type="checkbox", name="color", value="color", checked="checked")
+    //カラーリング
+    //input(type="checkbox", name="fairing", value="fairing", checked="checked")
+    //整形
+
+    br
+
+    input(type="submit", value="submit")
