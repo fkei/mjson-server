@@ -33,6 +33,6 @@ var methods =  {
         //console.log(locals);
         res.render('index', locals);
     }
-}
+};
 
 exports.index = methods;
