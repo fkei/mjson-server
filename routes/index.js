@@ -4,6 +4,7 @@
  */
 
 var mjson = require('mjson');
+var jsonlint = require('jsonlint');
 
 var methods =  {
     get: function (req, res) {
@@ -18,21 +19,29 @@ var methods =  {
         };
 
         var json = req.body.json;
+        var errorMessage;
+
         if (!json) {
             locals.error = 'unset json string.';
-        }
-        try {
-            locals.output = JSON.stringify(JSON.parse(JSON.minify(json)), null, '    ');
-            //console.log(locals.output);
-            locals.success = 'validate [ OK ].';
-        } catch (e) {
-            locals.error = e.stack.split('\n')[0];
-            locals.output = json;
-            //locals.error = e.stack;
+        } else {
+            try {
+                locals.output = JSON.stringify(JSON.parse(JSON.minify(json)), null, '    ');
+                //console.log(locals.output);
+                locals.success = 'validate [ OK ].';
+            } catch (e) {
+                try {
+                    jsonlint.parse(json);
+                } catch (err) {
+                    errorMessage = err.stack.split('\n');
+                    locals.error = errorMessage.slice(0, 4).join('<br />');
+                    locals.output = json;
+                    //locals.error = e.stack;
+                }
+            }
         }
         //console.log(locals);
         res.render('index', locals);
     }
-}
+};
 
 exports.index = methods;
