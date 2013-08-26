@@ -1,53 +1,54 @@
 {
-  "name": "mjson-server",
-  "version": "0.2.3",
-  "dependencies": {
-    "commander": "*",
-    "mjson": "*",
-    "colors": "*",
-    "express": "~3.3.5",
-    "jade": "~0.35.0",
-    "jsonlint": "~1.6.0"
-  },
-  "description": "You can run the mjson via a browser. ",
-  "keywords": [
-    "node",
-    "json",
-    "JSON-like",
-    "comment",
-    "web",
-    "browser"
-  ],
-  "homepage": "https://github.com/fkei/mjson-server.git",
-  "bugs": {
-    "email": "kei.topaz@gmail.com",
-    "url": "https://github.com/fkei/mjson-server/issues"
-  },
-  "author": {
-    "name": "Kei Funagayama",
-    "email": "kei.topaz@gmail.com",
-    "url": "https://github.com/fkei"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:fkei/mjson-server.git"
-  },
-  "devDependencies": {
-    "jshint": "*"
-  },
-  "engines": {
-    "node": ">=0.8.0",
-    "npm": ">=1.1.0"
-  },
-  "os": [
-    "darwin",
-    "linux"
-  ],
-  "main": "./app.js",
-  "bin": {
-    "mjson-server": "./app.js"
-  },
-  "scripts": {
-    "start": "node app.js"
-  }
+    "name": "mjson-server",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "commander": "*",
+        "mjson": "*",
+        "colors": "*",
+        "express": "~3.3.5",
+        "jade": "~0.35.0",
+        "jsonlint": "~1.6.0"
+    },
+    "description": "You can run the mjson via a browser. ",
+    "keywords": [
+        "node",
+        "json",
+        "JSON-like",
+        "comment",
+        "web",
+        "browser"
+    ],
+    "homepage": "https://github.com/fkei/mjson-server.git",
+    "bugs": {
+        "email": "kei.topaz@gmail.com",
+        "url": "https://github.com/fkei/mjson-server/issues"
+    },
+    "author": {
+        "name": "Kei Funagayama",
+        "email": "kei.topaz@gmail.com",
+        "url": "https://github.com/fkei"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:fkei/mjson-server.git"
+    },
+    "devDependencies": {
+        "jshint": "*"
+    },
+    "engines": {
+        "node": ">=0.8.0",
+        "npm": ">=1.1.0"
+    },
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "main": "./app.js",
+    "bin": {
+        "mjson-server": "./app.js"
+    },
+    "scripts": {
+        "start": "node app.js"
+    }
 }
