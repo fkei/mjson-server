@@ -1,7 +1,6 @@
 {
   "name": "mjson-server",
   "version": "0.2.1",
-  "private": true,
   "dependencies": {
     "commander": "*",
     "mjson": "*",
