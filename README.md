@@ -3,9 +3,12 @@ mjson-server
 
 You can run the mjson via a browser.
 
-# Check the contents
+# Overview
 
-Run the "JSON.minify" at the beginning, if it fails to perform the "jsonlint"
+- Output a formatted neatly JSON.
+- Eliminates comments in JSON using JSON.minify.
+- For JSON parse error, and an error of jsonlint.
+
 
 # install
 
