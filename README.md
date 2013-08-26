@@ -12,6 +12,8 @@ Run the "JSON.minify" at the beginning, if it fails to perform the "jsonlint"
 
 ![top page](screenshots/top.png)
 
+![error](screenshots/error.png)
+
 # source install 
 
 ```sh
