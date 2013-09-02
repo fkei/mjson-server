@@ -7,14 +7,14 @@ You can run the mjson via a browser.
 
 - Output a formatted neatly JSON.
 - Eliminates comments in JSON using JSON.minify.
-- For JSON parse error, and an error of jsonlint.
+- When JSON parse error occur, show error message of jsonlint and syntaxhighlight.
 
 
 # install
 
 ```sh
-$ npm install mjson-server -g 
-$ mjson-server 
+$ npm install mjson-server -g
+$ mjson-server
 Express server listening on port 3000
 
 Browser access: http://0.0.0.0:3000/
@@ -27,12 +27,12 @@ Browser access: http://0.0.0.0:3000/
 ![error](screenshots/error.png)
 
 
-# source install 
+# source install
 
 ```sh
 $ git checkout https://github.com/fkei/mjson-server.git
 $ cd mjson-server
-$ npm install . 
+$ npm install .
 $ node app
 Express server listening on port 3000
 
