@@ -8,7 +8,8 @@
         "colors": "*",
         "express": "~3.3.5",
         "jade": "~0.35.0",
-        "jsonlint": "~1.6.0"
+        "jsonlint": "~1.6.0",
+        "node-syntaxhighlighter": "~0.8.1"
     },
     "description": "You can run the mjson via a browser. ",
     "keywords": [

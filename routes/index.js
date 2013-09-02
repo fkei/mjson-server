@@ -5,6 +5,8 @@
 
 var mjson = require('mjson');
 var jsonlint = require('jsonlint');
+var sh = require('node-syntaxhighlighter');
+var lang = sh.getLanguage('json');
 
 var methods =  {
     get: function (req, res) {
@@ -32,14 +34,15 @@ var methods =  {
                 try {
                     jsonlint.parse(json);
                 } catch (err) {
+                    locals.output = json;
                     errorMessage = err.stack.split('\n');
                     locals.error = errorMessage.slice(0, 4).join('<br />');
-                    locals.output = json;
+                    locals.error += sh.highlight(locals.output, lang);
                     //locals.error = e.stack;
                 }
             }
         }
-        //console.log(locals);
+        // console.log(locals);
         res.render('index', locals);
     }
 };
