@@ -6,3 +6,7 @@ body {
 a {
   color: #00B7FF;
 }
+
+#highlight0, #highlight1 {
+  background-color:  #e95388 !important;
+}
