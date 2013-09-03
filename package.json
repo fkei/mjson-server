@@ -1,6 +1,6 @@
 {
     "name": "mjson-server",
-    "version": "0.0.1",
+    "version": "0.4.1",
     "private": true,
     "dependencies": {
         "commander": "*",
@@ -30,6 +30,13 @@
         "email": "kei.topaz@gmail.com",
         "url": "https://github.com/fkei"
     },
+    "contributors": [
+        {
+            "name": "Layzie",
+            "email": "saruko313@gmail.com",
+            "url": "https://github.com/Layzie"
+        }
+    ],
     "repository": {
         "type": "git",
         "url": "git@github.com:fkei/mjson-server.git"
