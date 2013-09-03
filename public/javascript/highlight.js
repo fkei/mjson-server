@@ -23,10 +23,11 @@
 
 $(function () {
     var mjson = window.mjson;
+    var $targetElement = $('p:nth-child(3)');
 
-    if ($('p:nth-child(3)')) {
+    if ($targetElement) {
         mjson.addHighlight(
-            mjson.getErrorLine($('p:nth-child(3)'))
+            mjson.getErrorLine($targetElement)
         );
     }
 });
