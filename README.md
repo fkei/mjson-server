@@ -22,9 +22,9 @@ Browser access: http://0.0.0.0:3000/
 
 # ScreenShots
 
-![top page](screenshots/top.png)
+![top page](https://raw.github.com/fkei/mjson-server/master/screenshots/top.png)
 
-![error](screenshots/error.png)
+![error](https://raw.github.com/fkei/mjson-server/master/screenshots/error.png)
 
 
 # source install
