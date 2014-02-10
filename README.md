@@ -42,3 +42,7 @@ Browser access: http://0.0.0.0:3000/
 # License
 
 The MIT License (MIT)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/fkei/mjson-server/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
