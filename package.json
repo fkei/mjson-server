@@ -7,7 +7,7 @@
         "mjson": "*",
         "colors": "*",
         "express": "~3.3.5",
-        "jade": "~0.35.0",
+        "jade": "~1.11.0",
         "jsonlint": "~1.6.0",
         "node-syntaxhighlighter": "~0.8.1"
     },
